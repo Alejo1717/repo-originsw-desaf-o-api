@@ -1,0 +1,27 @@
+{
+  "name": "repo-originsw-desafio-api",
+  "version": "1.0.0",
+  "description": "Este repositorio contienie la resolución del desafío tecnico propuesto por Origin Software correspondiente al proyecto api.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alejo1717/repo-originsw-desafio-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alejo1717/repo-originsw-desafio-api/issues"
+  },
+  "homepage": "https://github.com/Alejo1717/repo-originsw-desafio-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3"
+  }
+}
