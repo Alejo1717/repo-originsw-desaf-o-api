@@ -25,9 +25,9 @@ npm install
 con la siguiente información:
 
 PORT = 3002
-TOKEN_SECRET = j*******************o
+TOKEN_SECRET = jxxxxxxxo
 URL_TWD = 'https://api.twelvedata.com'
-API_KEY_TWD = cc****************a9
+API_KEY_TWD = ccxxxxxxxxxxa9
 //DATA BASE CONFIG
 USER_DB = postgres
 HOST_DB = localhost
