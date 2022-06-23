@@ -3,10 +3,10 @@ const router = Router();
 
 const {
     login,    
-} = require('../controllers/authController')
+} = require('../controllers/auth.controller')
 
 
-router.route('/')
+router.route('/login')
     .post(login)
 
 

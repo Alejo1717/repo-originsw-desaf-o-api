@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,9 +20,17 @@
   },
   "homepage": "https://github.com/Alejo1717/repo-originsw-desafio-api#readme",
   "dependencies": {
+    "axios": "^0.27.2",
+    "bcrypt-nodejs": "^0.0.3",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "express-session": "^1.17.3"
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.3",
+    "sequelize": "^6.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }

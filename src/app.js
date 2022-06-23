@@ -15,18 +15,19 @@ app.use(session({
   }))
 
 // middeleware
-app.use(cors());
+app.use(cors({ origin: true, credentials: true  }));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-//app.use(express.json());
 
 app.get('/', (req, res) => {
     req.session.count = req.session.count ? req.session.count + 1 : 1;
+    res.json({ message: 'Bienvenidos a API - Origin Software'});
 })
 
 // routers
-//app.use('/api/user', require('./routes/userRouter'));
-//app.use('/api/login', require('./routes/authRouter'));
-
+app.use('/api/auth', require('./routes/auth.route'));
+app.use('/api/users', require('./routes/user.route'));
+app.use('/api/twelvedata', require('./routes/twelvedata.route'));
+app.use('/api/action', require('./routes/action.route'));
 
 module.exports = app;
